@@ -9,7 +9,7 @@
 
 <div class="container mt-5">
     <div class="card shadow p-4 rounded">
-        <form asp-action="Create" method="post">
+        <form asp-action="Crear" method="post">
             <div class="mb-3">
                 <label asp-for="Nombre" class="form-label">Nombre(*)</label>
                 <input asp-for="Nombre" class="form-control" required />
@@ -32,7 +32,7 @@
                 <label asp-for="EstadoAdopcion" class="form-label">Estado de Adopción (*)</label>
                 <select asp-for="EstadoAdopcion" class="form-select">
                     <option value="disponible">Disponible</option>
-                    <option value="adoptada">Adoptada</option>
+                    <option value="adoptada">Adoptado(a)</option>
                 </select>
                 <span asp-validation-for="EstadoAdopcion" class="text-danger"></span>
             </div>
