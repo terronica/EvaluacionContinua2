@@ -1,0 +1,35 @@
+@model List<EvaluacionContinua2.Models.Adoption>
+
+@{
+    ViewData["Title"] = "Lista de Adopciones";
+}
+
+<div class="container mt-5">
+    <div class="card shadow p-4 rounded">
+        <h3 class="mb-4 text-center text-dark">Lista de Adopciones</h3>
+
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Mascota</th>
+                    <th>Adoptante</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var adopcion in Model)
+                {
+                    <tr>
+                        <td>@adopcion.Pets.Nombre</td>
+                        <td>@adopcion.Adopter.Nombre</td>
+                        <td>
+                            <span class="badge bg-success">
+                                @adopcion.Pets.EstadoAdopcion
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
