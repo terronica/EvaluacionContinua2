@@ -9,21 +9,26 @@ namespace EvaluacionContinua2.Data
 {
     public class ApplicationDbContext : DbContext
     {
-            public DbSet<Pet> Pets { get; set; }
-            public DbSet<Adopter> Adopters { get; set; }
-            public DbSet<Adoption> Adoptions { get; set; }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
 
-            protected override void OnModelCreating(ModelBuilder modelBuilder)
-            {
-                modelBuilder.Entity<Pet>()
-                    .HasOne(p => p.Adoption)
-                    .WithOne(a => a.Pets)
-                    .HasForeignKey<Adoption>(a => a.PetId)
-                    .IsRequired();
+        public DbSet<Pet> Pets { get; set; }
+        public DbSet<Adopter> Adopters { get; set; }
+        public DbSet<Adoption> Adoptions { get; set; }
 
-                modelBuilder.Entity<Adoption>()
-                    .HasOne(a => a.Adopter)
-                    .WithMany(d => d.Adopciones);
-            }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Pet>()
+                .HasOne(p => p.Adoption)
+                .WithOne(a => a.Pets)
+                .HasForeignKey<Adoption>(a => a.PetId)
+                .IsRequired();
+
+            modelBuilder.Entity<Adoption>()
+                .HasOne(a => a.Adopter)
+                .WithMany(d => d.Adopciones);
+        }
     }
 }
