@@ -34,8 +34,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ASUS/Documents/PC_Vero_Programación/EvaluacionContinua2/EvaluacionContinua2/Views/Pet/Asignar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XEFzaWduYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/Documents/PC_Vero_Programación/EvaluacionContinua2/EvaluacionContinua2/Views/Pet/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Documents/PC_Vero_Programación/EvaluacionContinua2/EvaluacionContinua2/Views/Pet/ListaAdopciones.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XExpc3RhQWRvcGNpb25lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/Documents/PC_Vero_Programación/EvaluacionContinua2/EvaluacionContinua2/Views/Shared/Error.cshtml]
